@@ -1,0 +1,30 @@
+header {
+  display: flex;
+  justify-content: space-between; /* Alinha o conteúdo às extremidades */
+  align-items: center; /* Centraliza verticalmente */
+  background: #d61e1e; /* Cor da barra de menus */
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+h1{
+    color: white;
+    transition: transform 0.3s ease;
+}
+
+h1:hover{
+    transform: scale(1.1);
+}
+
+html{
+    background-color: rgb(41, 38, 38);
+}
+
+#navbar a {
+  color: rgb(255, 255, 255); 
+  text-decoration: none; 
+  margin: 15px;
+}
+
+#navbar a:hover {
+  color: rgb(255, 143, 143);
+}

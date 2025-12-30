@@ -1,0 +1,29 @@
+
+#descricao-bloco{
+    position: absolute;
+     top: 25%;
+    left: 30%;
+    background-color: rgb(207, 139, 252);
+    width: 600px;
+    border-radius: 5%;
+    justify-content: center;
+    align-items: center;
+}
+
+#mat-escolar{
+  font-family: Arial;
+    color: rgb(0, 0, 0);
+    margin-left: 3%;
+}
+
+.termos{
+  margin-left: 2%;
+  font-weight: bold;
+}
+
+#mat-img{
+   width: 500px;
+    height: 250px;
+    border-radius: 5%;
+    margin-left: 7%;
+}
