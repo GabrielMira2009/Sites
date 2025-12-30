@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulário 2.0</title>
+</head>
+<body>
+  <div class="form-container">
+    <form class="form-manu">
+      <img src="img/cadastro.png" alt="Cadastro" class="img-cabecalho">
+
+      <fieldset>
+        <legend>Cadastro Geral</legend>
+        
+        <div class="flex-row">
+          <fieldset class="dados-pessoais" style="background-image: url('img/profissao.png'); background-repeat: no-repeat; background-position: right bottom; background-size: 100px 90px;">
+            <legend>Dados pessoais</legend>
+            <label>
+              Nome completo:
+              <input type="text" name="nome">
+            </label>
+            <label>
+              Profissão:
+              <select name="profissao">
+                <option value="">Sua profissão</option>
+                <option>Professor</option>
+                <option>Engenheiro</option>
+                <option>Médico</option>
+                <option>Outro</option>
+              </select>
+            </label>
+          </fieldset>
+
+          <fieldset class="localizacao" style="background-image: url('img/local.png'); background-repeat: no-repeat; background-position: right bottom; background-size: 90px 90px;">
+            <legend>Localização</legend>
+            <label>
+              E-mail:
+              <input type="email" name="email">
+            </label>
+            <label>
+              Rua:
+              <input type="text" name="rua">
+            </label>
+          </fieldset>
+        </div>
+
+        <fieldset class="faixa" style="background-image: url('img/idade.png'); background-repeat: no-repeat; background-position: right bottom; background-size: 110px 90px;">
+          <legend>Faixa etária</legend>
+          <div class="faixa-opcoes">
+            <label><input type="radio" name="idade"> até 20 anos</label>
+            <label><input type="radio" name="idade"> 20 até 30 anos</label>
+            <label><input type="radio" name="idade"> 30 até 40 anos</label>
+            <label><input type="radio" name="idade"> 40 até 50 anos</label>
+            <label><input type="radio" name="idade"> 50 até 60 anos</label>
+            <label><input type="radio" name="idade"> mais de 60</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="esportes" style= "background-image: url('img/esporte.png'); background-repeat: no-repeat; background-position: right bottom; background-size: 100px 170px;">
+          <legend>Esportes que pratica</legend>
+          <div class="esportes-opcoes">
+            <label><input type="checkbox" name="esporte"> Futebol de campo</label>
+            <label><input type="checkbox" name="esporte"> Futebol de salão</label>
+            <label><input type="checkbox" name="esporte"> Futebol society</label>
+            <label><input type="checkbox" name="esporte"> Vôlei de quadra</label>
+            <label><input type="checkbox" name="esporte"> Vôlei de praia</label>
+            <label><input type="checkbox" name="esporte"> Natação em piscina</label>
+            <label><input type="checkbox" name="esporte"> Natação em mar aberto</label>
+          </div>
+        </fieldset>
+
+        <fieldset class="comentario" style= "background-image: url('img/comentario.png'); background-repeat: no-repeat; background-position: right bottom ; background-size: 100px 90px;">
+          <legend>Comentário</legend>
+          <label>
+            Mensagem:
+            <textarea name="mensagem" rows="4"></textarea>
+          </label>
+        </fieldset>
+
+      </fieldset>
+       <div class="botoes">
+          <button type="submit">Enviar</button>
+          <button type="reset">Limpar</button>
+        </div>
+
+        
+    </form>
+  </div>
+</body>
+</html>
