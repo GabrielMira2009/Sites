@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário 2.0</title>
+</head>
+<body>
+
+    <div id="formulario">
+<form action="#" method="post" class="form-manu">
+    <header>
+        <h3>Sistema de gestão acadêmica</h3>
+    </header>
+    <h3>Manutenção de usuários do sistema interno</h3>
+
+    login: <input type="text" name="login"><br>
+    password: <input type="text" name="senha">
+
+    <select name="status" id="status" size="1">
+        <option value="ativo"></option>
+        <option value="inativo"></option>
+    </select>
+
+    Tipo: <input name="Tipo" value="Técnico"
+    type="checkbox">  Técnico 
+
+
+    <input name="Tipo" value="Professor"
+    type="checkbox"> Professor 
+
+    <input name="Tipo" value="Aluno"
+    type="checkbox"> Aluno <br>
+
+    Data de criação: <input type="date" name="" id=""> <br>
+
+    Perfil: <input name="Tipo" value="Convidado"
+    type="checkbox">  Convidado
+
+
+    <input name="Tipo" value="Administrador"
+    type="checkbox"> Administrador <br>
+
+    <label for="mensagem">Observações:</label> <br>
+        <textarea id="observacao" name="mensagem" rows="5" required></textarea> <br>
+
+    Módulos: <br>
+    <input name="Módulos" value="Compras"
+    type="checkbox">  Compras
+
+
+    <input name="Módulos" value="Biblioteca"
+    type="checkbox"> Biblioteca
+
+    <input name="Módulos" value="Acadêmico"
+    type="checkbox"> Acadêmico <br>
+
+    <input name="Módulos" value="Documentação"
+    type="checkbox"> Documentação
+
+    <input name="Módulos" value="Recursos humanos"
+    type="checkbox"> Recursos humanos <br>
+
+
+    <button class="button" type="submit">Cadastrar</button>
+    <button class="button" type="submit">Enviar</button>
+
+
+
+</form>
+</div>
+</body>
+</html>
