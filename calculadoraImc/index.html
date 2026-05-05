@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadoraImc</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img id="logoOds" src="img/logoOds.png" alt="">
+        <h1>Saúde e bem-estar</h1>
+    </header>
+
+    <div id="card">
+      <h1>ODS 3 - Saúde de qualidade</h1>
+
+          <h2>O que é?</h2>
+      <div class="linha">
+    <img src="img/ods3.png" alt="">
+    <p>Objetivo de Desenvolvimento Sustentável 3 (ODS 3), criado pela Organização das Nações Unidas, tem como objetivo garantir uma vida saudável e promover o bem-estar para todas as pessoas, em todas as idades. Esse objetivo busca melhorar a qualidade dos sistemas de saúde, reduzir a mortalidade, combater doenças como HIV/AIDS, malária e tuberculose, além de incentivar a prevenção de doenças e o acesso universal a serviços de saúde de qualidade. Dessa forma, a ODS 3 contribui para uma sociedade mais saudável e com melhor qualidade de vida.</p>
+      </div>
+
+        <h2>Cuidados com a saúde</h2>
+      <div class="linha">
+         <p>Cuidar da saúde é essencial para garantir qualidade de vida e bem-estar. Manter uma alimentação equilibrada, praticar atividades físicas regularmente, dormir bem e cuidar da saúde mental são hábitos fundamentais para o bom funcionamento do organismo. Além disso, realizar consultas médicas e exames de rotina ajuda na prevenção de doenças e na identificação precoce de possíveis problemas de saúde, aumentando as chances de tratamento eficaz. Adotar esses cuidados no dia a dia contribui para uma vida mais longa, saudável e equilibrada.
+    </p>
+    <img src="img/saudeCare.jpg" alt="">
+    </div>
+
+    <h2>Principais contribuições</h2>
+    <div class="linha">
+    <img src="img/odsBranco.png" alt="">
+    <p>A ODS 3 tem como objetivo garantir saúde e bem-estar para todas as pessoas. Suas principais contribuições incluem a redução da mortalidade infantil e materna, o combate a doenças, a prevenção de problemas de saúde e a ampliação do acesso a serviços de saúde de qualidade. Em projetos, também incentiva ações de promoção de hábitos saudáveis, vacinação, acesso a medicamentos e fortalecimento dos sistemas de saúde, contribuindo para melhorar a qualidade de vida da população e o desenvolvimento sustentável das comunidades.
+    </p>
+    </div>
+
+        <h2>Descubra se o seu peso é ideal!</h2>
+    <div class="linha">
+    <h3>Calculadora de Massa Corporal</h3>
+    </div>
+
+    <div class="flex-row">
+        <fieldset class="dados-pessoais" >
+          <legend>Dados pessoais</legend>
+          <label>
+            Altura (m):
+            <input type="number" id="altura">
+          </label>
+          <label>
+            Peso (kg):
+            <input type="number" id="peso">
+          </label>
+          <button onclick="calculadoraIMC()">Calcular IMC</button>
+          <p id="resultado"></p>
+          <img id="imgResultado" src="img/massaCorporal.jpg" alt="">
+        </fieldset>
+      </div>
+
+    </div>
+
+      <footer>
+        <img src="img/footerOds.jpg" alt="">
+        <p>Desenvolvido por: <strong>Gabriel de Jesus Miranda</strong></p>
+      </footer>
+
+</body>
+   
+    <script>
+      function calculadoraIMC() {
+        const alturaInput = document.getElementById('altura');
+        const pesoInput = document.getElementById('peso');
+        const resultadoElement = document.getElementById('resultado');
+        const imagem = document.getElementById('imgResultado');
+
+        const altura = parseFloat(alturaInput.value); 
+        const peso = parseFloat(pesoInput.value);
+
+        if (isNaN(altura) || isNaN(peso) || altura <= 0 || peso <= 0) {
+          resultadoElement.textContent = 'Por favor, insira valores válidos para altura e peso.';
+          return;
+        }
+
+        const imc = peso / (altura * altura);
+        let classificacao = '';
+
+        if (imc < 18.5) {
+          classificacao = 'Abaixo do peso';
+          imagem.src = 'img/pesoRuim.jpg';
+        } else if (imc >= 18.5 && imc < 25) {
+          classificacao = 'Peso normal';
+          imagem.src = 'img/pesoIdeal.webp';
+        } else if (imc >= 25 && imc < 30) {
+          classificacao = 'Sobrepeso';
+          imagem.src = 'img/pesoRuim.jpg';
+        } else {
+          classificacao = 'Obesidade';
+          imagem.src = 'img/pesoPessimo.jpg';
+        }
+
+        resultadoElement.textContent = `Seu IMC é ${imc.toFixed(2)} (${classificacao}).`;
+      }
+    </script>
+
+</html>
