@@ -1,0 +1,166 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
+header {
+    justify-content: center;
+    background-color: #0077cc;
+    color: #fff;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header img {
+    height: 50px;
+    margin-left: -200%;
+}
+
+#logo-hydrignis {
+    height: 110px;
+    margin-left: -70%;
+}
+
+
+
+header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0 15px;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s;
+
+
+
+}
+
+header a:hover {
+    color: rgb(71, 125, 241);
+}
+
+section {
+    padding: 70px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+div {
+    padding: 50px;
+}
+
+#fotoEquipe {
+    max-width: 400px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+}
+
+#fotoEquipe:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+h2 {
+    color: #0077cc;
+    margin: 30px 0 10px;
+    font-size: 26px;
+}
+
+h2:hover {
+    color: #005fa3;
+    transition: color 0.3s;
+}
+
+h3 {
+
+    color: #333;
+    margin-top: 20px;
+
+}
+
+h3:hover {
+    color: #0077cc;
+    transition: color 0.3s;
+}
+
+h4 {
+    color: #0077cc;
+    margin-top: 15px;
+}
+
+p {
+    max-width: 800px;
+    margin: 10px auto 25px;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+.ods {
+    width: 200px;
+    margin: 10px;
+    display: inline-block;
+
+}
+
+.problema {
+    max-width: 400px;
+    margin: 15px auto;
+    display: block;
+    border-radius: 5%;
+}
+
+img {
+    max-width: 300px;
+    margin: 15px auto;
+    display: block;
+}
+
+img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+
+footer {
+    background-color: #0077cc;
+    color: #fff;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin: 0 5px;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: rgb(71, 125, 241);;
+}
