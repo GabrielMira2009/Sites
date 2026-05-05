@@ -1,0 +1,26 @@
+section{
+    position: absolute;
+     top: 25%;
+    left: 30%;
+    background-color: lightyellow;
+    width: 600px;
+    border-radius: 5%;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#prep-miojo{
+    font-family: Arial;
+    color: rgb(0, 0, 0);
+    margin-left: 3%;
+}
+
+
+
+#miojo{
+    width: 500px;
+    height: 250px;
+    border-radius: 5%;
+    margin-left: 7%;
+}

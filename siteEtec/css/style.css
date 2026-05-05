@@ -1,0 +1,139 @@
+/*Geral - Estilos que se aplicam a todos os elementos*/
+* {
+    margin: 0; /*Remove todas as margens externas de todos os elementos*/
+    padding: 0; /*Remove todos os preenchimentos internos de todos os elementos*/
+    box-sizing: border-box; /*Inclui as bordas e preenchimentos no cálculo total da largura e altura*/
+}
+
+body {
+    display: flex; /*Define o container pai como flex, permitindo disposição flexível dos filhos*/
+    min-height: 100vh; /*Define a altura mínima da página para 100% da altura da janela*/
+    flex-direction: column; /*Alinha os elementos filhos em uma coluna, de cima para baixo*/
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    gap: 2px; /*Espaço entre os itens*/
+}
+
+header {
+    display: flex;
+    justify-content: space-between; /* Alinha o conteúdo às extremidades */
+    align-items: center; /* Centraliza verticalmente */
+    background: #23232e; /* Cor da barra de menus */
+    color: gold;
+    padding: 10px;
+}
+
+#menu a {
+  color: gold; /* Define a cor do link como gold */
+  text-decoration: none; /* Remove o sublinhado padrão dos links */
+  margin: 15px;
+}
+
+#menu a:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse, se desejar */
+  color: white;
+}
+
+#logo{
+  width: 100px;
+  height: 50px;
+}
+
+.main {
+display: flex; /*Define o container pai como flex, permitindo disposição flexível dos filhos*/
+flex-direction: row; /*Alinha os elementos filhos em linha*/
+flex: 1; /*O container principal ocupa o máximo de espaço possível no eixo principal*/
+gap: 2px; /*Espaço entre os itens*/
+}
+
+.sessao {
+    display: flex;
+    flex-direction: column; /*Permite empilhar o conteúdo verticalmente*/
+    justify-content: space-between; /* Coloca espaço entre o conteúdo, deixando a imagem no final */
+    width: 300px;
+    max-width: 300px;
+    order: 1;
+    background: linear-gradient(to bottom, #ffffff, #f3b0b0); /* Gradiente de cima para baixo */
+    margin: 5px;
+    padding: 20px;
+    color: #23232e;
+    flex-shrink: 0;
+}
+
+#extra {
+    width: 350px;
+    height: 150px;
+    align-self: center; /* Centraliza a imagem horizontalmente */
+    margin-top: left; /* Empurra a imagem para o final do elemento */
+    border-radius: 6px;
+}
+
+#etec {
+    width: 350px;
+    height: 150px;
+    align-self: center; /* Centraliza a imagem horizontalmente */
+    margin-top: left; /* Empurra a imagem para o final do elemento */
+}
+
+#cps {
+    width: 350px;
+    height: 150px;
+    align-self: center; /* Centraliza a imagem horizontalmente */
+    margin-top: left; /* Empurra a imagem para o final do elemento */
+}
+
+.artigo1 {
+    flex: 1; /*Faz o elemento ocupar o máximo de espaço disponível dentro do contêiner flex*/
+    order: 2; /*Define a ordem de exibição do elemento como o segundo*/
+    background: linear-gradient(to top, #ffffff, #f3b0b0); /*Gradiente de baixo para cima*/
+    margin: 5px;
+    padding: 20px;
+}
+
+#olimpiada{
+    width: 400px;
+    height: 200px;
+    border-radius: 6px;
+}
+
+/*Para o vídeo*/
+#premiacao{
+   width: 400px;
+   height: 300px;
+   border-radius: 6px;
+}
+
+.artigo2 {
+    flex: 1; /*Faz o elemento ocupar o máximo de espaço disponível dentro do contêiner flex*/
+    order: 3; /*Define a ordem de exibição do elemento como o segundo*/
+    background: linear-gradient(to bottom, #ffffff, #f3b0b0); /* Gradiente de cima para baixo */
+    margin: 5px;
+    padding: 20px;
+}
+
+#vestibulinho{
+    width: 300px;
+    height: 400px;  
+    border-radius: 6px;
+}
+
+aside {
+  flex: 0 0 20vw;
+  order: 4; /*Define a ordem de exibição do elemento como o segundo*/
+  background: #cfedec;
+  text-align: justify;
+  flex-basis: 10vw; /*Nao aumenta nem encolhe, tamanho fixo*/
+  margin: 5px;
+  padding: 20px;
+}
+aside > h3 {
+    text-align: center; /* Centraliza o texto horizontalmente */
+    flex-basis: 0 0 10vw; /*Nao aumenta nem encolhe, tamanho fixo*/
+}
+
+footer {
+ background: #23232e;
+  color: gold;
+  padding: 20px;
+  text-align: center; /* Centraliza o texto do rodapé */
+}
