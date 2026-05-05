@@ -23,3 +23,9 @@ Atualmente, o repositório conta com ow seguintes projetos:
  
 - 🚗 Tabela para mecânicos: Tabela de preços de serviços para mecânicos
     - Site desenvolvido com o intuito de aprender a fazer tabelas em HTML e CSS.
+ 
+- 🦘 Canguru: Site informativo sobre a Canguru de 2026
+    - Site desenvolvido com o objetivo de apresentar informações sobre a Canguru de 2026 de forma clara e organizada.
+
+- ⚖️ Calculadora de IMC
+    - Site desenvolvido para calcular o Índice de Massa Corporal (IMC) com base nos dados inseridos pelo usuário.
