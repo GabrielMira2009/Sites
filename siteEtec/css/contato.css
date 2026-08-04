@@ -1,0 +1,98 @@
+.escola-vencedora {
+    display: flex;
+    flex-direction: column; /*Permite empilhar o conteúdo verticalmente*/
+    justify-content: space-between; /* Coloca espaço entre o conteúdo, deixando a imagem no final */
+    width: 300px;
+    max-width: 300px;
+    order: 1;
+    background: linear-gradient(to bottom, #ffffff, #fffb00); /* Gradiente de cima para baixo */
+    margin: 5px;
+    padding: 20px;
+    color: #23232e;
+    flex-shrink: 0;
+}
+
+.contato-cps {
+    display: flex;
+    flex-direction: column; /*Permite empilhar o conteúdo verticalmente*/
+    justify-content: space-between; /* Coloca espaço entre o conteúdo, deixando a imagem no final */
+    width: 300px;
+    max-width: 300px;
+    order: 2;
+    background: linear-gradient(to bottom, #ffffff, #00e1ff); /* Gradiente de cima para baixo */
+    margin: 5px;
+    padding: 20px;
+    color: #23232e;
+    flex-shrink: 0;
+
+}
+
+.article1 {
+    display: table-column;
+    justify-content: space-between; /* Coloca espaço entre o conteúdo, deixando a imagem no final */
+    height: 450px;
+    line-height: 50px;
+    
+}
+
+#etec-endereco {
+    height: 150px;
+    width: 260px;
+    align-items: center;
+}
+
+#article2 {
+
+    height: 300px;
+    
+
+
+}
+
+#redes-social{
+    margin-top: 5%;
+    width: 200px;
+    height: 100px;
+}
+.fale-conosco {
+    width: 53%;
+    max-width: 600%;
+    order: 3;
+    background: linear-gradient(to bottom, #ffffff, #ffc0cb); 
+    margin: 5px;
+    padding: 20px;
+    color: #23232e;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+}
+
+.form-contato label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.form-contato input,
+.form-contato textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.form-contato button {
+    margin-top: 15px;
+    padding: 10px;
+    background-color: #23232e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-contato button:hover {
+    background-color: #444;
+}

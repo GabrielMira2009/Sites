@@ -1,0 +1,35 @@
+.appImg{
+    width: 200px;
+    height: 410px;
+    display: inline-block;
+    animation: appImgAnimation 1s ease-in-out;
+}
+
+.appImg:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+.appImg2{
+    width: 200px;
+    height: 420px;
+    display: inline-block;
+    margin-left: 20px;
+    animation: appImgAnimation 1s ease-in-out;
+}
+
+.appImg2:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
+
+.appImg3{
+    width: 200px; 
+    height: auto;
+    display: inline-block;
+    animation: appImgAnimation 1s ease-in-out;
+}
+
+.appImg3:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s;
+}
